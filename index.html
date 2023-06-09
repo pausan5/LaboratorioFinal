@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
+        <title>Formulario de Registro</title>     
+    </head>
+    <body>
+          <div class="login-box">
+            <h2>Formulario de Registro</h2>
+            <form method="post" action="registro.php">
+                <div class="user-box">Nombre:</div>
+                <input type="text" name="nombre" required><br>
+                <p></p>
+
+                <div class="user-box">Primer Apellido:</div>
+                <input type="text" name="apellido1" required><br>
+                <p></p>
+
+                <div class="user-box">Segundo Apellido:</div>
+                <input type="text" name="apellido2" required><br>
+                <p></p>
+
+                <div class="user-box">Email:</div>
+                <input type="email" name="email" required><br>
+                <p></p>
+
+                <div class="user-box">Usuario:</div>
+                <input type="text" name="login" required><br>
+                <p></p>
+                <div class="user-box">Contraseña:</div>
+                <input type="password" name="password" required minlength="4" maxlength="8"><br>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <button type="submit" class="btn">Enviar</button>
+        </form>
+
+      </div>
+    </body>
+
+</html>
