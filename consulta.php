@@ -1,17 +1,14 @@
 <?php
-// Datos de conexión a la base de datos MySQL
 $servername = "localhost";
 $username = "root";
 $password = ""; 
 $dbname = "formularioregistro";
 
-// Conectar a la base de datos
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Error al conectar a la base de datos: " . $conn->connect_error);
 }
 
-// Consultar los usuarios registrados
 $selectQuery = "SELECT * FROM formularioregistro";
 $result = $conn->query($selectQuery);
 
